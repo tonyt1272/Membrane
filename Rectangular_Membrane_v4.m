@@ -1,6 +1,9 @@
 %%Anthony Thompson, 11/17/2018,  Comprehensive Exams Review
 %Wave propagation on a rectangular membrane with fixed edges.
 %Initial displacement is a guassian
+
+%%Testing git version tracking%%
+
 clear
 clc
 close all
