@@ -38,9 +38,9 @@ x=0:dx:L_x;
 z=0:dz:L_z;
 [X,Z] = meshgrid(x,z);
 
-%Initial = h*exp(-((X-mu_x).^2+(Z-mu_z).^2)/(2*sigma_x^2));  %The initial disturbance
-Initial = h*exp(-(((X-mu_x).^2/(2*sigma_x^2))+((Z-mu_z).^2)/(2*sigma_z^2)));
-%Initial = h*exp(-(((X-mu_x).^2)/(2*sigma_x^2)+(Z-mu_z).^2)/(2*sigma_x^2));  %The initial disturbance
+%Initial = h*exp(-((X-mu_x).^2+(Z-mu_z).^2)/(2*sigma_x^2));  
+Initial = h*exp(-(((X-mu_x).^2/(2*sigma_x^2))+((Z-mu_z).^2)/(2*sigma_z^2)));%The initial disturbance
+
 
 for i=1:n_modes         %building the mode shapes 
     ModeX(:,:,i)=sin(i*pi*X/L_x);
